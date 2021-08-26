@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  a(href="/wordlist") ワードリストを見る 
+  form(action="/", method="post")
+    div 
+      h5 Q:問題を入力
+      input(type="text" name="wordQ")
+    div 
+      h5 A:答えを入力
+      input(type="text" name="wordA")
+    div 
+      h5 解説を入力
+      textarea(name="wordDescription", cols="30", rows="10")  
+    button(type="submit") ワードを登録する

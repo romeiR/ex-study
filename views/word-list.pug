@@ -1,0 +1,16 @@
+extends layout
+
+block content 
+  h3 作成された英単語リスト
+  table.table 
+    tr 
+      th 問題
+      th 答え
+      th 解説
+      th 作成日時
+    each word in words
+      tr 
+        th #{word.wordQ} 
+        th #{word.wordA} 
+        th #{word.wordDescription} 
+        th #{word.updatedAt}
